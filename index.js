@@ -1,6 +1,16 @@
-// Hello world
-let mensagem = "hello, world!"
-console.log(mensagem)
-console.log(mensagem)
-console.log(mensagem)
-console.log(mensagem)
+
+let meta = {
+    value: 'ler um livro por mês',
+    checked: true,
+}
+
+let metas = [
+    meta,
+    {
+        value: "caminhar 20 minitos todos os dias",
+        checked: false
+    
+    }
+]
+
+console.log(metas[1].value)

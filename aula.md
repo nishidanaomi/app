@@ -26,16 +26,37 @@ Como um lego, você irá utilizar as peças que existem na linguagem de programa
 
 ## Tipos de dados
 
-Strings (textos): `` '' ""
-Boolean: True False (valor logico)
-Number (numeros inteiros ou reais): 2; 8,9
+- Strings (textos): `` '' ""
+- Boolean: True, False (valor logico)
+- Number (numeros inteiros ou reais): 2; 8,9
 Char
 Double
 Int
 
 ## Escopos e Variáveis
 Variáveis globais e locais
-Connstantes
+Constantes: {} escritos dentro de chave local, fora ede chave global
+primeiro lê o local
 
 ## Operadores
 Operadores de atruibuição de valor: =
+Operador de contatenação: +
+
+## Estrutura de dados:
+
+### Arrays:
+Uma lista que contém qualquer tipo de dado: []
+
+### Objetos:
+
+Atrubutos e métodos 
+Criação e manipulação de objetos
+Acesso e propriedades de objetos
+
+### Functions
+- criar, passar argumentos
+- executar
+- arrow function / named function
+// function // arrow function
+() => {}
+() {}
