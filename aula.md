@@ -60,3 +60,9 @@ Acesso e propriedades de objetos
 // function // arrow function
 () => {}
 () {}
+
+# Estrutura de repetiçao
+- while
+
+# Condicionais
+- switch
