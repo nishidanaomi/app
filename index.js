@@ -1,6 +1,6 @@
 const { select, input, checkbox } = require('@inquirer/prompts')
 
-let meta= {
+let meta = {
     value: 'Tomar 2L de água por dia',
     checked: false,
     }
@@ -9,9 +9,8 @@ let metas = [ meta ]
 
 const cadastrarMeta = async () => {
     const meta = await input({ message: "Digite a meta:"})
-
-    if(meta.leight == 0) {
-        console.log('A meta não pode ser vazia.')
+        if(meta.leight == 0) {
+        console.log("A meta não pode ser vazia!")
         return 
     }
 
@@ -59,14 +58,14 @@ const metasRealizadas = async () => {
     }
 
     await select({
-        message:"Metas realizadas " + realizadas.length,
+        message:"Metas realizadas: " + realizadas.length,
         choices: [...realizadas]
     })    
 }
 
 const metasAbertas = async () => {
     const abertas = metas.filter((meta) => {
-        return !meta.checked
+        return meta.checked != true
     })
 
     if(abertas.length == 0) {
@@ -75,14 +74,14 @@ const metasAbertas = async () => {
     }
 
     await select ({
-        message: "Metas abertas " + abertas.length,
+        message: "Metas abertas: " + abertas.length,
         choices: [...abertas]
     })
 }
 
 const deletarMetas = async () => {
-    const metasDesmarcadas = metas.map((meta) => {
-                return { value: meta.value, checked: false }
+    const metasDesmarcadas = metas.map((meta) => {       
+        return { value: meta.value, checked: false }
     })
 
     const itemsADeletar = await checkbox({
@@ -90,13 +89,14 @@ const deletarMetas = async () => {
         choices: [...metasDesmarcadas],
         instructions: false,
     })
+
     if(itemsADeletar.length == 0) {
         console.log("Nenhum item para deletar!")
         return
     }
 
     itemsADeletar.forEach((item) => {
-        metas.filter((meta) => {
+        metas = metas.filter((meta) => {
             return meta.value != item
         })
     })
