@@ -39,15 +39,19 @@ Constantes: {} escritos dentro de chave local, fora ede chave global
 primeiro lê o local
 
 ## Operadores
-Operadores de atruibuição de valor: =
+Operadores de atruibuição de valor: =-
 Operador de contatenação: +
 Operadores de comparação: == =! <= >= < > 
 (vai retornar sempre um booleano: true ou false)
+Spread operator: ... (dependendo de onde ele ta pode ser Rest Operator)
 
 ## Estrutura de dados:
 
 ### Arrays:
-Uma lista que contém qualquer tipo de dado: []
+- Uma lista que contém qualquer tipo de dado: []
+- Metodos de array: push, [find, forEach, filter] : HOF (Higher Order Funcions)
+
+# metodo é toda funcao que ta dentro de um objeto
 
 ### Objetos:
 
