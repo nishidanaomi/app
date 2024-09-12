@@ -79,3 +79,9 @@ Uso de funções assincronas (assync/await)
 
 # .length 
 vai identificar se tem mais de um character
+
+# spread operator ou rest: ... 
+para espalhar, jogando tudo dentro do array, nesse caso
+
+# seta pra cima no terminal pra executar o mesmo comando de antes
+
