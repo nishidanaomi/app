@@ -39,11 +39,13 @@ Constantes: {} escritos dentro de chave local, fora ede chave global
 primeiro lê o local
 
 ## Operadores
-Operadores de atruibuição de valor: =-
-Operador de contatenação: +
-Operadores de comparação: == =! <= >= < > 
+- Operadores de atruibuição de valor: =-
+- Operador de contatenação: +
+- Operadores de comparação: == =! <= >= < > 
+(colocar ! na frente para dimiuir o codigo = pegando um booleano e invertendo o valor dele)
 (vai retornar sempre um booleano: true ou false)
-Spread operator: ... (dependendo de onde ele ta pode ser Rest Operator)
+- Spread operator: ... (dependendo de onde ele ta pode ser Rest Operator)
+
 
 ## Estrutura de dados:
 
