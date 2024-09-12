@@ -11,7 +11,7 @@ Como um lego, você irá utilizar as peças que existem na linguagem de programa
 
 - Comentarios: //
 - Declaração de variaveis (cont, let)
-- Operadores (atribuição, concanetação, mamematicos, logicos)
+- Operadores (atribuição, concanetação, mamemáticos, lógicos)
 - Tipos de dados (string, number, boolean)
 - Estrututas de dados (function, object, erray)
 - Controle de fluxo (if/else)
@@ -41,6 +41,8 @@ primeiro lê o local
 ## Operadores
 Operadores de atruibuição de valor: =
 Operador de contatenação: +
+Operadores de comparação: == =! <= >= < > 
+(vai retornar sempre um booleano: true ou false)
 
 ## Estrutura de dados:
 
@@ -66,6 +68,7 @@ Acesso e propriedades de objetos
 
 # Condicionais
 - switch
+- if/else (controle de fluxo)
 
 ## Módulos em node.js:
 Importação de modulos (require, CommonJS)
@@ -73,3 +76,6 @@ Biblioteca (biblioteca, modulos, pacotes) 'inquirer' para criar prompts interati
 
 ## Programação assincrona e Promisses:
 Uso de funções assincronas (assync/await)
+
+# .length 
+vai identificar se tem mais de um character
