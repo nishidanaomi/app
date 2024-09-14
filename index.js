@@ -1,4 +1,5 @@
-const { select, input, checkbox } = require('@inquirer/prompts')
+const { select, input, checkbox } = require('@inquirer/prompts');
+const { ALL } = require('dns');
 const fs = require("fs").promises
 
 let mensagem = "Bem vindo ao app de metas";
@@ -38,7 +39,7 @@ const cadastrarMeta = async () => {
 
 const listarMetas = async () => {
 
-    if(metas.leight == 0) {
+    if(metas.length == 0) {
         mensagem = "Não existem metas!"
         return
     }
@@ -48,15 +49,15 @@ const listarMetas = async () => {
         choices: [...metas],
         instructions: false,
     })
+   
+        metas.forEach((m) => {
+        m.checked = false
+    })
 
-    if(respostas.leight == 0) {
+    if(respostas.length == 0) {
         mensagem =  "Nenhuma meta selecionada!"
         return
     }
-
-    metas.forEach((m) => {
-        m.checked = false
-    })
 
     respostas.forEach((resposta) => {
         const meta = metas.find((m) => {
@@ -71,7 +72,7 @@ const listarMetas = async () => {
 }
 
 const metasRealizadas = async () => {
-    if(metas.leight == 0) {
+    if(metas.length == 0) {
         mensagem = "Não existem metas!"
         return
     }
@@ -85,6 +86,8 @@ const metasRealizadas = async () => {
     return
     }
 
+    //como faz? se todas metas estiverem checkadas: mensagem = Parabéns! Todas as metas foram realizadas! :D
+   
     await select({
         message:"Metas realizadas: " + realizadas.length,
         choices: [...realizadas]
@@ -92,7 +95,7 @@ const metasRealizadas = async () => {
 }
 
 const metasAbertas = async () => {
-    if(metas.leight == 0) {
+    if(metas.length == 0) {
         mensagem = "Não existem metas!"
         return
     }
@@ -113,7 +116,7 @@ const metasAbertas = async () => {
 }
 
 const deletarMetas = async () => {
-    if(metas.leight == 0) {
+    if(metas.length == 0) {
         mensagem = "Não existem metas!"
         return
     }
