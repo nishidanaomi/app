@@ -51,7 +51,7 @@ primeiro lê o local
 
 ### Arrays:
 - Uma lista que contém qualquer tipo de dado: []
-- Metodos de array: push, [find, forEach, filter] : HOF (Higher Order Funcions)
+- Metodos de array: push, [find, forEach, filter, map] : HOF (Higher Order Funcions)
 
 # metodo é toda funcao que ta dentro de um objeto
 
@@ -65,9 +65,11 @@ Acesso e propriedades de objetos
 - criar, passar argumentos
 - executar
 - arrow function / named function
-// function // arrow function
-() => {}
-() {}
+// function // arrow function // named function
+arrow function:
+const objeto = () => {}; 
+named function:
+function objeto () {}
 
 # Estrutura de repetiçao
 - while
@@ -80,7 +82,7 @@ Acesso e propriedades de objetos
 Importação de modulos (require, CommonJS)
 Biblioteca (biblioteca, modulos, pacotes) 'inquirer' para criar prompts interativos
 
-## Programação assincrona e Promisses:
+## Programação assincrona e Promisses: (provavelmente de uso só do JavaScript)
 Uso de funções assincronas (assync/await)
 
 # .length 
@@ -91,3 +93,9 @@ para espalhar, jogando tudo dentro do array, nesse caso
 
 # seta pra cima no terminal pra executar o mesmo comando de antes
 
+# ={} objeto (chavinhas após atribuição de valor)
+# todo objeto tem um valor (value: "")
+# { escopo }
+# [ array ]
+
+# metódo (dentro de um objeto) e função (fora do objeto)
