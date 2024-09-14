@@ -81,6 +81,12 @@ function objeto () {}
 ## Módulos em node.js:
 Importação de modulos (require, CommonJS)
 Biblioteca (biblioteca, modulos, pacotes) 'inquirer' para criar prompts interativos
+FS (file system) modulo nativo do node
+
+## JSON 
+- Javascript Object Notaion (.json)
+- JSON.parse() = transforma de json para javascript
+- JSON.stryngfy() = vai transformar de javascript para JSON 
 
 ## Programação assincrona e Promisses: (provavelmente de uso só do JavaScript)
 Uso de funções assincronas (assync/await)
@@ -99,3 +105,5 @@ para espalhar, jogando tudo dentro do array, nesse caso
 # [ array ]
 
 # metódo (dentro de um objeto) e função (fora do objeto)
+
+# .json = JavaScript Object Notation
