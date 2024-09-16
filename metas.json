@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "value": "Tomar 2L de água por dia",
+    "checked": false
+  },
+  {
+    "value": "Ler 15 minutos por dia",
+    "checked": false
+  },
+  {
+    "value": "Andar 30 minutos por dia",
+    "checked": false
+  }
+]
